@@ -1,0 +1,119 @@
+.navbar {
+    background: rgb(31, 31, 31);
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__header {
+    padding: 7px;
+}
+.navbar__header img{
+    width:30px;
+}
+.navbar__user__data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 720px) {
+    .navbar__header {
+      font-size: 20px;
+    }
+    .navbar__header img {
+        width: 20px;
+    }
+  }
+
+
+.signedIn {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.logout__button {
+    padding: 8px 16px;
+    font-size: 15px;
+    color: gray;
+    border:none;
+    border-radius: 10px;
+    background: rgb(39, 39, 39);
+    margin: 0px 8px;
+    font-weight: 700;
+}
+.user {
+    border: aquamarine 2px solid;
+}
+
+.logout__button img {
+    margin: auto 1px;
+    width: 16px;
+}
+.notSignedIn {
+    font-size: 18px;
+}
+
+.blog__search {
+    flex:1;
+    width: 100%;
+    display: flex;
+    padding: 10px px;
+    margin: 0 10px;
+    justify-content: space-between;
+    background: rgb(39, 39, 39);
+    border-radius: 5px;
+}
+
+.search {
+    width: 80%;
+    padding: 5px 10px;
+    background: none;
+    border:none;
+    color:white;
+    font-size:15px;
+    outline:none;
+}
+
+.submit {
+    width: 20%;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 12px 0px;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+    outline: none;
+    background-color: rgb(39, 39, 39);
+}
+@media screen and (max-width: 670px) {
+    .blog__search  {
+      margin: 0;
+    }
+    .search {
+        width: 60%;
+    }
+    .submit {
+        width: 22%;
+        font-size: 12px;
+    }
+    .logout__button {
+        font-size: 13px;
+    }
+    .logout__button img {
+        width: 12px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logout__button {
+        display: none;
+    }
+    .navbar__header  img{
+        display: none;
+    }
+  }
+.submit:hover {
+    background-color: rgb(39, 39, 39);
+}
